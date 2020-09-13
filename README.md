@@ -1,6 +1,6 @@
 # Pathscrambler
 
-Simple Tool written in python to bypass access-control restriction currenty supports :
+Simple Tool written in python to bypass endpoint restriction currenty supports :
 
 These payloads are directly pulled from twitter. Thanks to the community :)
 
