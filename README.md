@@ -2,4 +2,4 @@
 
 Command Example :
 
-python3 pathsramblerpy -u "https://www.example/admin" where /admin returns 403
+python3 pathscramblerpy -u "https://www.example/admin" where /admin returns 403
