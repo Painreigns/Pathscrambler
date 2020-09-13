@@ -46,4 +46,4 @@ https://www.example.com/admin..;/   => 200
 
 Command Example :
 
-python3 pathscramblerpy -u "https://www.example/admin" where /admin returns 403
+python3 pathscrambler.py -u "https://www.example/admin" where /admin returns 403
