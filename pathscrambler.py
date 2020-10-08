@@ -4,7 +4,7 @@ import sys
 def custom_req(original_url):
 	new_url=original_url
 	response=requests.get(original_url,
-    headers={'X-Custom-IP-Authorization': '127.0.0.1'}
+    headers={'X-Custom-IP-Authorization': '127.0.0.1','user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
 	)
 	print(original_url)
 	print("Status Code:",response.status_code)
@@ -19,7 +19,7 @@ def custom_req(original_url):
 	new_url=d.join(new_url)
 	new_url=new_url+random
 	response2=requests.get(new_url,
-    headers={'x-original-url': last_element}
+    headers={'x-original-url': last_element,'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
 	)
 	print(new_url)
 	print("Status Code:",response2.status_code)
@@ -51,7 +51,9 @@ def enc(url):
 
 def req(final_url):
 	print(final_url)
-	response=requests.get(final_url)
+	response=requests.get(final_url,
+	headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
+	)
 	print("status Code:",response.status_code)
 	print("Content-Length",len(response.content))
 	print("-------------------------------------------")
